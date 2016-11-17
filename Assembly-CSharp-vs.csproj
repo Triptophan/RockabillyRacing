@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{27DC7165-84C5-59FC-FE0A-906304708F37}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_64;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AI\AttackState.cs" />
+     <Compile Include="Assets\Scripts\AI\CombatSentryState.cs" />
+     <Compile Include="Assets\Scripts\AI\DefendState.cs" />
+     <Compile Include="Assets\Scripts\AI\DriveState.cs" />
+     <Compile Include="Assets\Scripts\AI\IdleState.cs" />
+     <Compile Include="Assets\Scripts\AI\State.cs" />
+     <Compile Include="Assets\Scripts\AI\StateMachine.cs" />
+     <Compile Include="Assets\Scripts\AI\SteeringBehavior.cs" />
+     <Compile Include="Assets\Scripts\Combat\Buffs\BoosterCharge.cs" />
+     <Compile Include="Assets\Scripts\Combat\Buffs\ForceField.cs" />
+     <Compile Include="Assets\Scripts\Combat\CombatController.cs" />
+     <Compile Include="Assets\Scripts\Combat\CombatControllerBase.cs" />
+     <Compile Include="Assets\Scripts\Combat\DamageController.cs" />
+     <Compile Include="Assets\Scripts\Combat\PlayerCombatController.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\FirebombCharge.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\FlameToken.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\FlamethrowerFlames.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\GrapplingHookProjectile.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\HomingProjectile.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\MachineGunBullet.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\OilSlickCharge.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\OozeGlobby.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\Rocket.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\ScatterJackCharge.cs" />
+     <Compile Include="Assets\Scripts\Combat\Projectiles\SingleMinesCharge.cs" />
+     <Compile Include="Assets\Scripts\Combat\TrackInteractives\FirebombEffect.cs" />
+     <Compile Include="Assets\Scripts\Combat\TrackInteractives\FirebombPack.cs" />
+     <Compile Include="Assets\Scripts\Combat\TrackInteractives\OilSlickPuddle.cs" />
+     <Compile Include="Assets\Scripts\Combat\TrackInteractives\OozePuddle.cs" />
+     <Compile Include="Assets\Scripts\Combat\TrackInteractives\OozeSplash.cs" />
+     <Compile Include="Assets\Scripts\Combat\TrackInteractives\SingleMine.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Base\BurstWeapon.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Base\RearArmament.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Base\SingleFireWeapon.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Base\SprayWeapon.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Front\Flamethrower.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Front\GrapplingHook.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Front\HomingRocketLauncher.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Front\MachineGun.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Front\OozeGun.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Front\RocketLauncher.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Rear\Booster.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Rear\Firebomb.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Rear\ForceFieldGenerator.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Rear\OilSlick.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Rear\ScatterJacks.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weapons\Rear\SingleMines.cs" />
+     <Compile Include="Assets\Scripts\Enumerations\MusicType.cs" />
+     <Compile Include="Assets\Scripts\Enumerations\UpgradeType.cs" />
+     <Compile Include="Assets\Scripts\Enumerations\VehicleType.cs" />
+     <Compile Include="Assets\Scripts\Enumerations\WeaponType.cs" />
+     <Compile Include="Assets\Scripts\Environment\GameController.cs" />
+     <Compile Include="Assets\Scripts\Environment\LapTracker.cs" />
+     <Compile Include="Assets\Scripts\Environment\PowerUpController.cs" />
+     <Compile Include="Assets\Scripts\Environment\RaceSetupController.cs" />
+     <Compile Include="Assets\Scripts\Environment\TerrainManager.cs" />
+     <Compile Include="Assets\Scripts\Environment\TrackManager.cs" />
+     <Compile Include="Assets\Scripts\Environment\WinnersCircle.cs" />
+     <Compile Include="Assets\Scripts\Environment\WinnersCircleController.cs" />
+     <Compile Include="Assets\Scripts\GUI\ActionTextController.cs" />
+     <Compile Include="Assets\Scripts\GUI\AmmoHealthController.cs" />
+     <Compile Include="Assets\Scripts\GUI\LapTextController.cs" />
+     <Compile Include="Assets\Scripts\Helpers\AbilityScoreHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\ConversionHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\GUIHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\GameObjectHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\LevelHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\MoneyHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\ResourcesHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\TagHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\VehicleHelper.cs" />
+     <Compile Include="Assets\Scripts\Helpers\WeaponHelper.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\ICombatController.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IDamageAbsorber.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IDamageToken.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Projectiles\IBuffEffect.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Projectiles\IGroundEffect.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Projectiles\IHomingProjectile.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Projectiles\IMultiShot.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Projectiles\IProjectile.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Projectiles\ISprayEmission.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Weapons\IBoostingWeapon.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Weapons\IBurstWeapon.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Weapons\ISlowingWeapon.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Weapons\ISprayWeapon.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\Weapons\IWeapon.cs" />
+     <Compile Include="Assets\Scripts\Menus\DebugMenu.cs" />
+     <Compile Include="Assets\Scripts\Menus\InGameMenu.cs" />
+     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\Menus\MainMenuExitButton.cs" />
+     <Compile Include="Assets\Scripts\Menus\TitleMenu.cs" />
+     <Compile Include="Assets\Scripts\Menus\VehicleShopMenu.cs" />
+     <Compile Include="Assets\Scripts\Menus\WeaponShopMenu.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerCamera.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerNameController.cs" />
+     <Compile Include="Assets\Scripts\Shared\HomingBeconEffect.cs" />
+     <Compile Include="Assets\Scripts\Shared\MusicController.cs" />
+     <Compile Include="Assets\Scripts\Shared\VehicleLightController.cs" />
+     <Compile Include="Assets\Scripts\Shared\VehicleMonitor.cs" />
+     <Compile Include="Assets\Scripts\Shared\VehicleMovement.cs" />
+     <Compile Include="Assets\Scripts\Shared\WaypointController.cs" />
+     <Compile Include="Assets\Scripts\Statistics\AbilityScore.cs" />
+     <Compile Include="Assets\Scripts\Statistics\KongregateAPI.cs" />
+     <Compile Include="Assets\Scripts\Statistics\KongregateInit.cs" />
+     <Compile Include="Assets\Scripts\Statistics\KongregateRESTful.cs" />
+     <Compile Include="Assets\Scripts\Statistics\Upgrade.cs" />
+     <Compile Include="Assets\Scripts\Statistics\VehicleUpgrade.cs" />
+     <Compile Include="Assets\Scripts\Statistics\WeaponUpgrade.cs" />
+     <Compile Include="Assets\Scripts\Utility\GameDataSerializer.cs" />
+     <Compile Include="Assets\Scripts\Utility\IndexedNameSorter.cs" />
+     <Compile Include="Assets\Scripts\Utility\MaterialGenerator.cs" />
+     <Compile Include="Assets\Scripts\Utility\XKCDColors.cs" />
+     <None Include="Assets\3D Platformer Tutorial\Blob-Shadow\ShadowProjection.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>D:/RockabilllyRacingDev/Assets/plugins/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{04ECCEE9-328D-203C-592D-DE403133F84B}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

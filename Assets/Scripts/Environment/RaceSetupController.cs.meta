@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 741b39f9b0a721f4a87224e94c63e58f
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - AIPrefab: {fileID: 100020, guid: a45a01163ec0ee54fa2140e4370971f9, type: 2}
+  - PlayerPrefab: {fileID: 100014, guid: 95ccbbee85494eb40b4d2ba4b69d3091, type: 2}
+  - WaypointPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
